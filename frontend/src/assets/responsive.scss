@@ -1,0 +1,31 @@
+@use "sass:math";
+
+$base-width: 2560;
+
+$target-widths: (
+  2560: 1,
+  1920: math.div(1920, 2560),
+  1280: math.div(1280, 2560),
+  1080: math.div(1080, 2560),
+  768:  1,
+  375:  1
+);
+
+@mixin generate-px-vars($scale) {
+  @for $i from 1 through 2560 {
+    --px-#{$i}: #{math.ceil($i * $scale)}px;
+  }
+}
+
+:root {
+  @include generate-px-vars(1);
+}
+
+@each $width, $ratio in $target-widths {
+  @media (max-width: #{$width}px) {
+    :root {
+      --scale-ratio: #{$ratio};
+      @include generate-px-vars($ratio);
+    }
+  }
+}

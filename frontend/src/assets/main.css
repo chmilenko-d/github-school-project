@@ -1,0 +1,28 @@
+@import './base.css';
+@import './fonts.css';
+@import './responsive.scss';
+
+#app {
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+
+:root {
+  --font-size-small: var(--px-12);
+  --font-size-normal: var(--px-18);
+  --font-size-big: var(--px-24);
+  --font-size-small-header: var(--px-22);
+  --font-size-header: var(--px-30);
+  --font-size-big-header: var(--px-60);
+
+}

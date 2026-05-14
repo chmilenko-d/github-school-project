@@ -1,0 +1,57 @@
+:root {
+  /* ── Школьная палитра ── */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: #dbeafe;
+  --color-primary-50: #eff6ff;
+  --color-accent: #f59e0b;
+
+  /* ── Фоны ── */
+  --color-background: #f8fafc;
+  --color-background-soft: #f1f5f9;
+  --color-background-mute: #e2e8f0;
+  --color-background-white: #ffffff;
+
+  /* ── Текст ── */
+  --color-heading: #0f172a;
+  --color-text: #334155;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+
+  /* ── Границы ── */
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+
+  /* ── Карточки ── */
+  --color-card-bg: #ffffff;
+  --color-card-border: #e2e8f0;
+  --color-card-shadow: rgba(15, 23, 42, 0.08);
+
+  /* ── Прочее ── */
+  --section-gap: 160px;
+  --color-footer-bg: #0f172a;
+  --color-footer-text: #cbd5e1;
+  --color-hero-bg: #0f172a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
