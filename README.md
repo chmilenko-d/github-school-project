@@ -1,10 +1,10 @@
-# Школьный сайт — МАОУ Гимназия №39 города Владимира
+# Школьный сайт
 
 Веб-приложение для школы с управлением контентом через Django Admin. Headless CMS: Django (GraphQL API) + Vue 3 SPA.
 
-🌐 **Сайт:** http://test-project.space
-🔧 **Админка:** http://test-project.space/admin/ (admin / admin123)
-📦 **Репозиторий:** http://a5e802c07dcd.vps.myjino.ru:49179/dchmilenko/school-porject
+- **Сайт:** http://info-project.site
+- **Админка:** http://info-project.site/admin/ (admin / admin123)
+- **Репозиторий:** http://a5e802c07dcd.vps.myjino.ru:49179/dchmilenko/school-porject
 
 ## Стек
 - **Backend:** Django 5, Graphene (GraphQL), PostgreSQL 16, Gunicorn
@@ -83,9 +83,9 @@ Production запускает 3 контейнера:
 - `school-nginx` — Nginx (reverse proxy + SPA)
 
 Доступы:
-- Сайт: http://test-project.space
-- Admin: http://test-project.space/admin/
-- GraphQL: http://test-project.space/graphql/
+- Сайт: http://info-project.site
+- Admin: http://info-project.site/admin/
+- GraphQL: http://info-project.site/graphql/
 
 ## Сборка фронтенда для production
 ```bash
@@ -123,24 +123,11 @@ SSH-доступ к серверу (см. `docs/ssh-deploy.md`):
 python manage.py test
 ```
 
-## Документация
-Подробная документация в папке `docs/`:
-- [Обзор проекта](docs/overview.md)
-- [Backend](docs/backend.md)
-- [Frontend](docs/frontend.md)
-- [Инфраструктура](docs/infrastructure.md)
-- [API Reference](docs/api-reference.md)
-- [План реализации](docs/implementation-plan.md)
-- [SSH-деплой](docs/ssh-deploy.md)
-
 ## Безопасность
 - `SECRET_KEY` вынесен в переменные окружения
 - `prod.env` в `.gitignore`
 - `DEBUG=False` в production
 - SSH-аутентификация по ключу
-
-## Автор
-Индивидуальный школьный проект.
 
 ## Статус
 Сайт задеплоен и работает на Jino VPS.
