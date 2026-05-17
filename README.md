@@ -1,9 +1,9 @@
-# Школьный сайт
+# Универсальный конструктор школьных сайтов
 
 Веб-приложение для школы с управлением контентом через Django Admin. Headless CMS: Django (GraphQL API) + Vue 3 SPA.
 
 - **Сайт:** http://info-project.site
-- **Админка:** http://info-project.site/admin/ (admin / admin123)
+- **Админка:** http://info-project.site/admin/
 - **Репозиторий:** http://a5e802c07dcd.vps.myjino.ru:49179/dchmilenko/school-porject
 
 ## Стек
